@@ -10,7 +10,7 @@ prompt=ChatPromptTemplate.from_messages([('system','You are an Helpful AI Assist
 ('human','Question :{Question}')])
 
 st.secrets["OPENAI_API_KEY"]
-
+####
 def generate_response(query,llm,temperature,max_tokens,api_key):
     model=ChatOpenAI(model_name=llm,temperature=temperature,openai_api_key=api_key,max_tokens=max_tokens)
     parser=StrOutputParser()
@@ -37,4 +37,5 @@ if st.button("Answer"):
         response=generate_response(query,llm,temperature,max_tokens,api)
         st.write(response)
     else:
+
         st.warning("Please Enter some Query")
