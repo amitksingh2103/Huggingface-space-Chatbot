@@ -1,13 +1,13 @@
 ---
-title: OpenAI Chatbot Query App
-emoji: 📊
+title: Huggingface Demo
+emoji: 🚀
 colorFrom: red
 colorTo: red
-sdk: streamlit
+sdk: docker
 app_port: 8501
 tags:
 - streamlit
 pinned: false
-short_description: select multiple GPT Apps  to answer
+short_description: Adding Files
 license: apache-2.0
 ---
